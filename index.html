@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="pagina">
+        <nav>
+            <div class="cabeza">
+            <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="4.5rem" viewBox="0 0 24 24"><title>bicycle-electric</title><path d="M19 7C18.44 7 17.91 7.11 17.41 7.28L14.46 1.5H11V3H13.54L14.42 4.72L12 10.13L10.23 5.95C10.5 5.85 10.74 5.58 10.74 5.25C10.74 4.84 10.41 4.5 10 4.5H8C7.58 4.5 7.24 4.84 7.24 5.25S7.58 6 8 6H8.61L10.86 11.25H9.92C9.56 8.85 7.5 7 5 7C2.24 7 0 9.24 0 12S2.24 17 5 17C7.5 17 9.56 15.15 9.92 12.75H12.5L15.29 6.43L16.08 7.96C14.82 8.87 14 10.34 14 12C14 14.76 16.24 17 19 17S24 14.76 24 12 21.76 7 19 7M5 15.5C3.07 15.5 1.5 13.93 1.5 12S3.07 8.5 5 8.5C6.67 8.5 8.07 9.68 8.41 11.25H4V12.75H8.41C8.07 14.32 6.67 15.5 5 15.5M19 15.5C17.07 15.5 15.5 13.93 15.5 12C15.5 10.92 16 9.97 16.77 9.33L18.57 12.85L19.89 12.13L18.1 8.63C18.39 8.56 18.69 8.5 19 8.5C20.93 8.5 22.5 10.07 22.5 12S20.93 15.5 19 15.5M11 20H7L13 23V21H17L11 18V20Z" /></svg>
+            </div>
+
+            <div class="menu">
+                <button class="btn">MODELOS</button>
+                <div class="contenido">
+                  <a href="#">HONDA</a>
+                  <a href="#">KTM</a>
+                  <a href="#">YAMAHA</a>
+                </div>
+              </div>
+
+        </div>
+    </nav>
+        <section class="filtros">
+                <div>
+                <p>Ordenar por:</p>
+                <select>
+                <option value="precio">Precio</option>
+                <option value="fecha">Fecha</option>
+                </select>
+                </div>
+                
+        </section>
+        <main>
+            
+            <div class="tarjeta">
+                <div class="card">
+                    <img src="assets/imgs/moto azul.jpg" alt="">
+                    <h3>YAMAHA</h3>
+                    <h5>YZ250FE</h5>
+                    <a href="">Descripcion</a>
+                </div>
+            </div>
+
+          
+            <div class="tarjeta">
+                <div class="card">
+                    <img src="assets/imgs/moto roja.jpg" alt="">
+                    <h3>HONDA</h3>
+                    <h5>CR250FE</h5>
+                    <a href="">Descripcion</a>
+                </div>
+            </div>
+            
+           
+            <div class="tarjeta">
+                <div class="card">
+                    <img src="assets/imgs/moto naranja.jpg" alt="">
+                    <h3>KTM</h3>
+                    <h5>EXC250FE</h5>
+                    <a href="">Descripcion</a>
+                </div>
+            </div>
+
+                <ul class="lista">
+                    <li><a href="#">«</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a class="active" href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">»</a></li>
+                </ul>
+
+
+        </main>
+        <footer>
+            <div class="termino">
+                <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+                <div>
+                    <p>Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+   
+</body>
+</html>

@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+nav{
+    grid-area: menu;
+    padding: 10px;
+    background-color: lightskyblue;
+    color:white 
+    
+
+}
+
+.btn {
+    background-color:  gray;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.contenido{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.contenido a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.contenido a:hover {background-color: #f1f1f1}
+
+.menu:hover .contenido {
+    display: block;
+}
+
+.menu:hover .btn {
+    background-color: #3e8e41;
+}
+
+section{
+    grid-area: busqueda;
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    
+}
+
+main{
+    grid-area: principal;
+    padding: 10px;
+    
+  }
+
+  ul.lista {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+ul.lista li {display: inline;}
+
+ul.lista li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+footer{
+    grid-area: pie;
+    background: lightskyblue;
+    color:black;
+    padding: 10px;
+    
+    
+}
+
+.pagina{
+    display: grid;
+    border: 1px;
+    grid-template-rows: 1fr 1fr auto 1fr;
+    grid-template-areas:
+    "menu"
+    "busqueda"
+    "principal"
+    "pie";
+}
+
+.filtros {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    }
+    
+
+.cabeza{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.termino{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight:100;
+}
+
+.tarjeta{
+    width: 100%;
+    max-width: 1280px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.card{
+    width: 21rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 1.25rem;
+    text-align: center;
+    transition: all 0.25s;
+}
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+
+.card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+@media (min-width:576px){
+    nav{
+        grid-area: menu;
+        padding: 10px;
+        background-color: lightskyblue;
+        color:white }
+    
+    section{
+            grid-area: busqueda;
+            padding: 10px;
+            background-color: lightgray;
+            color: black; }
+
+    main{
+            grid-area: principal;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;}
+
+    .menu{
+        display: flex;
+        margin-top: 100%;
+        
+    }
+
+    .cabeza{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            flex-direction: column;}
+
+    .contenido{
+        display: flex;
+        position: unset;
+        flex-direction: column;
+    }
+
+    .btn{
+        bottom: unset;
+    }
+        
+    
+    
+    
+    
+    
+    .pagina { display: grid;
+        border: 1px;
+        grid-template-areas:
+        "menu busqueda"
+        "menu principal"
+        "pie principal";
+        grid-template-columns: 2fr 6fr;
+        grid-template-rows: 1fr 8fr 1fr;}
+
+    
+    footer{
+        grid-area: pie;
+        background: lightskyblue;
+        color:black;
+        padding: 10px;}
+
+}
